@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" role="img" aria-label="Golfmerce e-commerce and social media platform preview">
+  <defs>
+    <linearGradient id="golf-bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#00784c"/>
+      <stop offset=".48" stop-color="#00b77b"/>
+      <stop offset="1" stop-color="#0d1117"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="650" fill="#f6f8f7"/>
+  <rect width="1200" height="82" fill="url(#golf-bg)"/>
+  <text x="72" y="52" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">Golfmerce</text>
+  <rect x="270" y="18" width="280" height="46" rx="16" fill="#ffffff" opacity=".95"/>
+  <text x="306" y="48" fill="#7a8691" font-family="Arial, Helvetica, sans-serif" font-size="16">Search product with Pinpoint AI</text>
+  <text x="708" y="52" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Proshop</text>
+  <text x="834" y="52" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Post</text>
+  <text x="930" y="52" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Chat</text>
+  <text x="1010" y="52" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Cart</text>
+  <rect x="52" y="130" width="1096" height="420" rx="24" fill="#132017"/>
+  <path d="M52 130h1096v420H52Z" fill="url(#golf-bg)" opacity=".48"/>
+  <circle cx="875" cy="278" r="118" fill="#ffffff" opacity=".22"/>
+  <path d="M820 428c32-104 128-104 174 0" fill="#ffffff" opacity=".18"/>
+  <path d="M796 224c44-58 154-44 190 28" fill="none" stroke="#ffffff" stroke-width="22" stroke-linecap="round" opacity=".5"/>
+  <path d="M198 472h804" stroke="#000000" stroke-width="136" stroke-linecap="round" opacity=".35"/>
+  <text x="90" y="340" fill="#ffffff" font-family="Georgia, 'Times New Roman', serif" font-size="82">MJRGOLF</text>
+  <text x="92" y="402" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">Premium Craft. Timeless Fit. CRIQUET Polos.</text>
+  <rect x="448" y="574" width="304" height="12" rx="6" fill="#dbe2e8"/>
+  <rect x="448" y="574" width="158" height="12" rx="6" fill="#00bd86"/>
+</svg>

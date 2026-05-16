@@ -274,12 +274,16 @@ button:hover {
     height: 550px;
     width: 550px;
     margin-right: 60px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #2e3138;
 }
 
 /** about section **/
 
 #about {
-    min-height: 60vh;
+    min-height: auto;
     width: 100%;
     background: #14181f;
     margin: 0;
@@ -289,6 +293,12 @@ button:hover {
     border-bottom: 3px solid #d3d7de;
     padding: 60px 38px;
     scroll-margin-top: 120px;
+}
+
+#about .education .box-wrap,
+#about .box {
+    height: auto;
+    min-height: 120px;
 }
 
 section .title {
@@ -465,12 +475,23 @@ section .heading {
 
 .tool img,
 .tool svg,
+.tool i,
 .tech svg,
-.tech img {
+.tech img,
+.tech i {
     width: 180px;
     height: auto;
     display: block;
     margin: 0 auto;
+}
+
+.tool i,
+.tech i {
+    width: clamp(80px, 14vw, 180px);
+    height: clamp(80px, 14vw, 180px);
+    line-height: clamp(80px, 14vw, 180px);
+    font-size: clamp(42px, 7vw, 96px);
+    color: #3a90f8;
 }
 
 .name {
@@ -921,7 +942,7 @@ footer .wrapper .icon {
     /* about section */
 
     #about {
-        min-height: 50vh;
+        min-height: auto;
     }
 
     section .heading {
@@ -945,6 +966,11 @@ footer .wrapper .icon {
     .box {
         height: 130px;
         width: 100%;
+    }
+
+    #about .education .box-wrap,
+    #about .box {
+        height: auto;
     }
 
     .box h5 {
@@ -1103,7 +1129,7 @@ footer .wrapper .icon {
     /* about section */
 
     #about {
-        min-height: 50vh;
+        min-height: auto;
     }
 
     .heading .title {
@@ -1124,6 +1150,11 @@ footer .wrapper .icon {
     .education .box-wrap,
     .box {
         height: 110px;
+    }
+
+    #about .education .box-wrap,
+    #about .box {
+        height: auto;
     }
 
     .box h5 {
@@ -1193,7 +1224,7 @@ footer .wrapper .icon {
     /* about section */
 
     #about {
-        min-height: 50vh;
+        min-height: auto;
     }
 
     #box1 {
@@ -1527,7 +1558,8 @@ footer .wrapper .icon {
     /* about section */
 
     #about {
-        min-height: 70vh;
+        min-height: auto;
+        padding: 34px 22px;
     }
 
     .topic2,
@@ -1727,12 +1759,17 @@ footer .wrapper .icon {
     /* about section */
 
     #about {
-        min-height: 50vh;
+        min-height: auto;
     }
 
     .education .box-wrap,
     .box {
         height: 140px;
+    }
+
+    #about .education .box-wrap,
+    #about .box {
+        height: auto;
     }
 
     #box1 {
@@ -1919,4 +1956,14 @@ footer .wrapper .icon {
     footer .wrapper p {
         font-size: 12px;
     }
+}
+
+#about {
+    min-height: auto;
+}
+
+#about #box1,
+#about .education .box-wrap,
+#about .box {
+    height: auto;
 }
