@@ -55,13 +55,13 @@ header {
 header .navbar {
     width: 100%;
     display: flex;
-    padding: 35px 50px;
+    padding: 24px 50px;
     justify-content: space-between;
     align-items: center;
 }
 
 header .navbar .head {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 500;
     color: #d3d7de;
     text-decoration: none;
@@ -83,7 +83,7 @@ header .navbar .menu {
     background: none;
     padding: 5px 20px;
     border-radius: 20px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     transition: all 0.3s ease;
     user-select: none;
@@ -97,9 +97,9 @@ header .navbar .menu {
 }
 
 .theme-toggle {
-    height: 46px;
-    width: 46px;
-    min-width: 46px;
+    height: 42px;
+    width: 42px;
+    min-width: 42px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -113,7 +113,7 @@ header .navbar .menu {
 }
 
 .theme-toggle i {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .theme-toggle:hover {
@@ -2102,8 +2102,8 @@ body.light-theme .content-img-wrap img {
 
 @media (max-width: 480px) {
     header .navbar .head {
-        font-size: 22px;
-        max-width: 150px;
+        font-size: 20px;
+        max-width: 138px;
         line-height: 1.2;
     }
 
@@ -2122,6 +2122,47 @@ body.light-theme .content-img-wrap img {
 }
 
 @media (max-width: 730px) {
+    #home {
+        padding-top: 96px;
+    }
+
+    .main-content {
+        min-width: 0;
+        width: 100%;
+        padding: 0 18px;
+        margin: 0 auto;
+    }
+
+    .text-content {
+        width: 100%;
+        min-width: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .text-content p {
+        width: 100%;
+        max-width: 430px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .main-content a {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    button {
+        margin-left: 0;
+    }
+
     .content-image {
         margin-top: 12px;
     }
