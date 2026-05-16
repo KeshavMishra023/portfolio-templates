@@ -57,6 +57,7 @@ header .navbar {
     display: flex;
     padding: 35px 50px;
     justify-content: space-between;
+    align-items: center;
 }
 
 header .navbar .head {
@@ -93,6 +94,32 @@ header .navbar .menu {
 .nav-link:hover {
     color: #fff;
     background: #3a90f8;
+}
+
+.theme-toggle {
+    height: 46px;
+    width: 46px;
+    min-width: 46px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 0 0 12px;
+    color: #d3d7de;
+    background: #21242c;
+    border: 2px solid #2e3138;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle i {
+    font-size: 20px;
+}
+
+.theme-toggle:hover {
+    color: #ffffff;
+    background: #3a90f8;
+    box-shadow: none;
 }
 
 /* menu button */
@@ -892,6 +919,14 @@ footer .wrapper .icon {
     .menu-btn,
     .menu-btn-2 {
         right: 50px;
+    }
+
+    .theme-toggle {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        z-index: 2;
     }
 
     .menu {
@@ -1966,4 +2001,141 @@ footer .wrapper .icon {
 #about .education .box-wrap,
 #about .box {
     height: auto;
+}
+
+body.light-theme {
+    background: #f4f7fb;
+    color: #18212f;
+}
+
+body.light-theme header,
+body.light-theme #home,
+body.light-theme #about,
+body.light-theme #skills,
+body.light-theme #experience,
+body.light-theme #contact,
+body.light-theme footer {
+    background: #f4f7fb;
+}
+
+body.light-theme header {
+    box-shadow: 0 8px 24px rgba(20, 24, 31, 0.08);
+}
+
+body.light-theme header .navbar .head,
+body.light-theme .nav-link,
+body.light-theme .text-content,
+body.light-theme .box h5,
+body.light-theme .container h1,
+body.light-theme .container p,
+body.light-theme footer .wrapper p {
+    color: #18212f;
+}
+
+body.light-theme .menu {
+    background: #f4f7fb;
+}
+
+body.light-theme .heading .title,
+body.light-theme .wrap .topic1,
+body.light-theme .topic2,
+body.light-theme .tool,
+body.light-theme .tech,
+body.light-theme .box,
+body.light-theme .project-box,
+body.light-theme .project-box .info,
+body.light-theme .theme-toggle {
+    background: #ffffff;
+}
+
+body.light-theme .heading .title,
+body.light-theme .wrap .topic1,
+body.light-theme .topic2 {
+    color: #2563eb;
+}
+
+body.light-theme .wrap .topic1,
+body.light-theme .topic2 {
+    color: #18212f;
+}
+
+body.light-theme .tool,
+body.light-theme .tech,
+body.light-theme .theme-toggle {
+    border-color: #dce6f2;
+}
+
+body.light-theme .name,
+body.light-theme .project-skill .skill {
+    color: #2563eb;
+    border-color: #dce6f2;
+}
+
+body.light-theme .info .project-info {
+    color: #3d4a5c;
+}
+
+body.light-theme .icons i {
+    color: #18212f;
+    border-color: #2563eb;
+}
+
+body.light-theme .menu-btn,
+body.light-theme .menu-btn-2,
+body.light-theme .theme-toggle,
+body.light-theme .mail i,
+body.light-theme .link a i {
+    color: #18212f;
+}
+
+body.light-theme #home,
+body.light-theme #about,
+body.light-theme #skills,
+body.light-theme #experience,
+body.light-theme #contact {
+    border-bottom-color: #dce6f2;
+}
+
+body.light-theme .content-img-wrap img {
+    border-color: transparent;
+}
+
+@media (max-width: 480px) {
+    header .navbar .head {
+        font-size: 22px;
+        max-width: 150px;
+        line-height: 1.2;
+    }
+
+    .theme-toggle {
+        height: 40px;
+        width: 40px;
+        min-width: 40px;
+    }
+}
+
+@media (max-width: 360px) {
+    header .navbar .head {
+        font-size: 19px;
+        max-width: 128px;
+    }
+}
+
+@media (max-width: 730px) {
+    .content-image {
+        margin-top: 12px;
+    }
+
+    .content-img-wrap img {
+        width: min(64vw, 260px);
+        height: min(64vw, 260px);
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .content-img-wrap img {
+        width: 210px;
+        height: 210px;
+    }
 }

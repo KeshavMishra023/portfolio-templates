@@ -4,6 +4,22 @@ document.addEventListener('DOMContentLoaded', function () {
     const menu = document.querySelector('.menu');
     const menuBtn = document.querySelector('.menu-btn');
     const menuBtn2 = document.querySelector('.menu-btn-2');
+    const themeToggle = document.querySelector('.theme-toggle');
+    const themeIcon = themeToggle.querySelector('i');
+
+    function setTheme(theme) {
+        const isLight = theme === 'light';
+        document.body.classList.toggle('light-theme', isLight);
+        themeIcon.className = isLight ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+        themeToggle.setAttribute('aria-label', isLight ? 'Switch to dark theme' : 'Switch to light theme');
+        localStorage.setItem('portfolio-theme', theme);
+    }
+
+    setTheme(localStorage.getItem('portfolio-theme') || 'dark');
+
+    themeToggle.addEventListener('click', function () {
+        setTheme(document.body.classList.contains('light-theme') ? 'dark' : 'light');
+    });
 
     menuBtn.addEventListener('click', function () {
         menu.classList.toggle('active');
